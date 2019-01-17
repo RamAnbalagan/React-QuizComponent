@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Quiz from "./Quiz";
-
+import QuizQuestionButton from "./QuizQuestionButton.js"
 class QuizQuestion extends Component {
   constructor(props) {
     super(props);
@@ -16,7 +16,7 @@ class QuizQuestion extends Component {
         </section>
         <section>
           <ul>
-            <li> {this.props.quiz_question.answer_options[0]} </li>
+            <QuizQuestionButton button_text={this.props.quiz_question.answer_options[0]}/>
           </ul>
         </section>
       </main>
